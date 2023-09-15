@@ -1,0 +1,113 @@
+// codigo 1
+// o codigo analisa a idade da pessoa e se ela tem carteira de motorista
+// alice poderá dirigir se ela tiver mais de 18 anos e se ter carteira de motorista (true)
+
+// codigo 2
+
+// identificar se o animal é carnivoro ou não
+// a mensagem sera: leão é um animal carnivoro
+
+// codigo 3
+
+// identifica se o numero é maior, menor ou igual a 5 & divide ele por 2 para saber se é par ou impar
+// o numero é maior que 5
+// o numero é par
+
+//
+
+// exercicios de escrita
+
+// exercicio 1
+
+// let idade = prompt("qual sua idade?")
+
+// if (idade > 18) {
+//     console.log("você é menor de idade")
+// } else {
+//     console.log("você é maior de idade")
+// }
+
+//
+
+// exercicio 2
+
+//  let turno = prompt("em que turno você estuda? (M T N)")
+
+//  if (turno === "M") {
+//      console.log("bom dia!")
+//  } else if (turno === "T") {
+//      console.log("boa tarde!")
+//  } else if (turno === "N") {
+//      console.log("boa noite!")
+//  }
+
+//
+
+// exercicio 3
+
+// let turno = prompt("em que turno voce estuda? (M T N)")
+// switch (turno) {
+//     case 'M':
+//         console.log("Bom dia!")
+//         break;
+//     case 'T':
+//         console.log("Boa tarde!")
+//         break;
+//     case 'N':
+//         console.log("Boa noite!")
+// }
+
+//
+
+// exercicio 4
+
+//  const aluno = {
+//      nome: "Parkes",
+//      idade: 17,
+//      tipoDeCurso: true,
+//      temBolsa: false,
+
+//  }
+
+// if (aluno.idade < 30) {
+//       if (!aluno.temBolsa) {
+//          if (aluno.tipoDeCurso) {
+//      console.log("voce pode se candidatar para uma bolsa de estudos")
+//  } else{
+//      console.log("a desculpa, voce nao atende aos requisitos para a bolsa")
+//  }
+//  } else{
+//      console.log("b desculpa, voce nao atende aos requisitos para a bolsa")
+//  }
+//  } else{
+//      console.log("c desculpa, voce nao atende aos requisitos para a bolsa")
+//  }
+
+//
+
+
+// exercicio 5
+
+const produto = {
+    nome: 'cavalo emo',
+    preco: 70,
+    desconto: 10,
+    freteGratis: true,
+
+}
+
+console.log("calculando preco do", produto.nome)
+
+if (produto.desconto > 0) {
+    if(produto.freteGratis){
+        console.log("com o frete gratis e o desconto de 10 reais pelo cavalo ser emo, o valor total fica:", produto.preco - produto.desconto)
+    } else {
+        console.log("com o produto com desconto e sem frente gratis, o preco fica", produto.preco + 25)
+    }
+}else {
+    if (!produto.freteGratis){
+    console.log("sem desconto e sem frete gratis, o valor final fica:", produto.preco)
+}else{
+console.log("com o", produto.nome, "custando", produto.preco, "e sem cupom de desconto, o valor total fica:", produto.preco)
+}
+}
